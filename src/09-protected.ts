@@ -1,4 +1,4 @@
-export class Animal {
+export abstract class Animal {
   constructor(protected name: string) { }  // usamos el protected para poder usar las propiedades de la clase animal internamente pero no se puede utilizar afuera de la clase. La diferencia entre protected y private es que con private no podemos usar la propiedad name en la clase dog, solo nos deja en la clase animal, pero con protected si podemos usar name en cualquier parte de nuestras clases pero no desde afuera
 
   move() {
@@ -40,3 +40,5 @@ const cheise = new Dog('cheise','Diego');
 //cheise.name = 'otro nombre';
 cheise.woof(1)
 cheise.move()
+
+
